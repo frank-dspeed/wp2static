@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+var exporter = require("../exporter/exporter");
+var program = require("commander");
+var pkg = require("../package.json");
+
+program
+  .version(pkg.version)
+  .usage('[xml file path] [options]')
+  .option('-e --ext [extension]', 'extension to save the files as (html by default)')
+  .parse(process.argv);
+
+if (program.args.length > 0) {
+  var xmlFile = program.rawArgs[2];
+  var ext = program.rawArgs[4]||"";
+
+  exporter(xmlFile, { ext: ext });
+  
+} else {
+  program.help();
+}
