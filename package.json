@@ -3,17 +3,17 @@
   "description": "A CLI tool to export your WordPress site to static files",
   "version": "0.0.1",
   "dependencies": {
-    "jade": "0.28.1",
-    "less": "1.3.3",
-    "request": "2.12.0",
-    "slugs": "0.1.2",
-    "xml2js": "0.2.4",
-    "async": "0.2.5",
-    "commander": "1.1.1"
+    "jade": "1.11.0",
+    "less": "2.7.1",
+    "request": "2.78.0",
+    "slugs": "0.1.3",
+    "xml2js": "0.4.17",
+    "async": "2.1.2",
+    "commander": "2.9.0"
   },
   "devDependencies": { 
-    "mocha": "1.8.0",
-    "should": "1.2.1"
+    "mocha": "3.1.2",
+    "should": "11.1.1"
   },
   "scripts": { 
     "test": "./node_modules/.bin/mocha test/*.js"
